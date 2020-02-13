@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Notis_2.Page1">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#101217">
+            <AbsoluteLayout Padding="0, 6, 0, 0">
+                <Frame AbsoluteLayout.LayoutBounds="0.3, 0, 390, 280" 
+                  AbsoluteLayout.LayoutFlags="PositionProportional" CornerRadius="20" HasShadow="True" BackgroundColor="#2b3138" WidthRequest="310"
+                        HorizontalOptions="Center">
+                    <StackLayout>
+                        <Label Text="Укажите время" TextColor="#cadfdf"/>
+                        <DatePicker x:Name="D" TextColor="#cadfdf"/>
+                        <TimePicker x:Name="Time" TextColor="#cadfdf" Time="0:0:0" Format="t"/>
+                        <Entry x:Name="opisanie" TextColor="#cadfdf" PlaceholderColor="#808080" Placeholder="Введите краткое описание события" MaxLength="17"/>
+                        <Editor x:Name="opisanie_1" TextColor="#cadfdf" PlaceholderColor="#808080" Placeholder="Введите полное описание события" AutoSize="TextChanges"/>
+                    </StackLayout>
+                </Frame>
+                <Button Text="✔"
+                        TextColor="#101217"
+                        Clicked="Button_Clicked"
+                        HeightRequest="50"
+                        WidthRequest="70"
+                        FontSize="20"
+                        CornerRadius="50"
+                        AbsoluteLayout.LayoutBounds="0.95, 0.95, 65, 65"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        BackgroundColor="#cadfdf"/>
+            </AbsoluteLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

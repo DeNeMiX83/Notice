@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notis_2.Android", "Notis_2\Notis_2.Android\Notis_2.Android.csproj", "{FA7422F2-4412-4A59-A84A-84A72B244C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notis_2", "Notis_2\Notis_2\Notis_2.csproj", "{F8D15130-D127-4E80-9E9E-C724A360BDD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA7422F2-4412-4A59-A84A-84A72B244C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7422F2-4412-4A59-A84A-84A72B244C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7422F2-4412-4A59-A84A-84A72B244C32}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FA7422F2-4412-4A59-A84A-84A72B244C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7422F2-4412-4A59-A84A-84A72B244C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7422F2-4412-4A59-A84A-84A72B244C32}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F8D15130-D127-4E80-9E9E-C724A360BDD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D15130-D127-4E80-9E9E-C724A360BDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D15130-D127-4E80-9E9E-C724A360BDD1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F8D15130-D127-4E80-9E9E-C724A360BDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D15130-D127-4E80-9E9E-C724A360BDD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D15130-D127-4E80-9E9E-C724A360BDD1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05E53A40-24F7-4B5B-81E2-5CC899D7B529}
+	EndGlobalSection
+EndGlobal

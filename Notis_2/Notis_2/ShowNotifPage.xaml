@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Notis_2.ShowNotifPage">
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="0, 10, 0, 0" BackgroundColor="#101217">
+            <ScrollView VerticalOptions="StartAndExpand">
+                <StackLayout>
+                    <Frame CornerRadius="18"
+                           WidthRequest="310"
+                           HorizontalOptions="Center"
+                           BackgroundColor="#2b3138"
+                           AbsoluteLayout.LayoutBounds="0.3, 0, 390, 280" 
+                  AbsoluteLayout.LayoutFlags="PositionProportional">
+                        <ScrollView>
+                            <Label Text="{Binding description_full}" Margin="0, 0, 5, 0" FontSize="20" TextColor="#cadfdf"/>
+                        </ScrollView>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <Button Text="×"
+                    TextColor="#101217"
+                    Clicked="DeleteFriend"
+                    CornerRadius="50"
+                    AbsoluteLayout.LayoutBounds="0.95, 0.95, 65, 65"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    FontSize="34"
+                    BackgroundColor="#cadfdf"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage> 

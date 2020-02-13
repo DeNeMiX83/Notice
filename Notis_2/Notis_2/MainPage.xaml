@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Notis_2.MainPage">
+    <NavigationPage.TitleView>
+        <Label Text="Notices"
+               VerticalOptions="CenterAndExpand"
+               FontSize="25"
+               TextColor="White"/>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout BackgroundColor="#101217">
+        <ListView x:Name="Listview"
+                  ItemsSource="{Binding}"
+                  SeparatorVisibility="None"
+                  HasUnevenRows="True"
+                  ItemSelected="OnItemSelected"
+                  AbsoluteLayout.LayoutBounds="0, 0, 1, 1" 
+                  AbsoluteLayout.LayoutFlags="SizeProportional">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Frame CornerRadius="20"
+                                       Margin="10"
+                                       WidthRequest = "325"
+                                       HeightRequest="60"
+                                       BackgroundColor="#2b3138" >
+                                    <StackLayout Orientation="Vertical">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding time}" Margin="0, -15, 0, 0" FontSize="18" TextColor="#cadfdf"/>
+                                            <Label HorizontalOptions="EndAndExpand" 
+                                                   Margin="0, -12, 2, 0" Text="{Binding uniDate}" FontSize="15" TextColor="#cadfdf"/>
+                                        </StackLayout>
+                                        <StackLayout>
+                                            <Label Text="{Binding description}" 
+                                                   FontAttributes="Bold" 
+                                                   Margin="0, 8, 0, 0" 
+                                                   FontSize="20"
+                                                   TextColor="White"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="+" TextColor="#101217"
+            AbsoluteLayout.LayoutBounds="0.95, 0.95, 65, 65"
+            Padding="0, 0, 0, 2"
+            FontSize="35"
+            BackgroundColor="#cadfdf"
+            CornerRadius="50"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            Clicked="Page1"/>
+    </AbsoluteLayout>
+</ContentPage>
